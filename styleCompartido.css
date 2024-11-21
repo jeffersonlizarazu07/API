@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --agricol:#cae34b;
+  }
+
+
+  .logo-nav{
+    filter:grayscale(100%) brightness(1) opacity(75%) ;
+  }
+  
+  body main{
+    background-color: var(--agricol);
+    padding: 24px;
+    height: calc(100vh - 35px);
+    justify-content: space-evenly;
+  }
+
+
+  @media(width < 487px){
+
+  
+    body main{
+      padding-top: 12px;
+      padding-right: 3px;
+      padding-left:3px;
+      padding-bottom: 12px;
+      flex-direction: column;
+    }
+
+  
+    body main{
+      font-size: 0.75em;
+    }
+  
+   body main section:nth-child(3)  {
+      display: none;
+    }
+   
+  }
